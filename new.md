@@ -1,0 +1,3 @@
+Total de mortos por covid....
+
+Milhões de pessaos no mundo inteiro
