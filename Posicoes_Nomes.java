@@ -2,14 +2,14 @@ package NewTask;
 
 // By Simao Domingos
 /*
- Faça um programa de consulta pela posição numérica da pessoa:
-  leia nomes de pessoas, sendo a quantidade determinada pelo usuário.
-   Logo após a entrada pergunte ao usuário em que posição ele 
-   gostaria de consultar o nome.
-    Após sua resposta, exiba o nome que fica na posição informada.
-Chame atenção do usuário em caso de uma consulta inválida, ou seja,
- com números menores ou iguais a zero, ou maiores 
- do que a quantidade cadastrada.
+ Make a consultation program by the person's numerical position:
+   read people's names, the amount being determined by the user.
+    Right after the entry ask the user in what position he
+    I would like to consult the name.
+     After your answer, display the name in the position provided.
+Draw the user's attention in case of an invalid query, that is,
+  with numbers less than or equal to zero, or greater
+  than the registered quantity. 
  
  */
 
@@ -21,25 +21,25 @@ public class Posicoes_Nomes {
 	public static void main(String[] args) {
 		 int i;
 		 Scanner sc = new Scanner(System.in);
-		 System.out.println(" Insira número  de pessoas: ");
+		 System.out.println("  Enter number of people: ");
 		 int n = sc.nextInt();
 		 String nomes[] = new String[n]; 
 		 	for(i=0; i< nomes.length; i++) {
 		 	
-		 		System.out.println("insira  o nome da pessoa "+(i+1)+": ");
+		 		System.out.println(" enter the person's name: "+(i+1)+": ");
 		 		Scanner ps = new Scanner(System.in);
 		 		nomes[i] = ps.nextLine();	
 		 		
 		 	
 		 } 
-		 	System.out.println("Em que posicao se encintra o nome: ");
+		 	System.out.println(" in what position is the name found:  ");
 		 	int posicao=i;
 		 	Scanner ps = new Scanner(System.in);
 	 		 posicao = ps.nextInt(); 
 		 	for( i=0; i< nomes.length; i++) {
 		 		if (posicao<n) {
 		 			
-		 		System.out.println("Nome encontrado na posicao--> " +(posicao)+ " eh: "); 
+		 		System.out.println(" Name found in position --> " +(posicao)+ " is: "); 
 		 		System.out.println(nomes[posicao]); 
 		 		System.out.println("  TESTANDO O GIT E O GITHUB ");
 		 		break;
@@ -47,7 +47,7 @@ public class Posicoes_Nomes {
 		 		
 		 		else
 		 	
-	 			System.out.println(" Posicao inserida  nao existe  ");
+	 			System.out.println("  Inserted position does not exist ");
 		 		
 		 		
 		 		break;
