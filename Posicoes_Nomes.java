@@ -32,7 +32,7 @@ public class Posicoes_Nomes {
 		 		
 		 	
 		 } 
-		 	System.out.println(" in what position is the name found:  ");
+		 	System.out.println(" in which position is the name found:  ");
 		 	int posicao=i;
 		 	Scanner ps = new Scanner(System.in);
 	 		 posicao = ps.nextInt(); 
